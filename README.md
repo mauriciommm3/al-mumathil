@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Al-Mumathil (O Ator / الْمُمَثِّل)
 
-# Run and deploy your AI Studio app
+Um jogo de tabuleiro interativo e social focado em mímicas, projetado para grupos e famílias! O aplicativo divide os jogadores em duas equipes (A e B) e propõe um desafio divertido onde você precisa interpretar conceitos e adivinhar as palavras no menor tempo possível. Com um extenso vocabulário bilíngue (Português e Árabe) e design moderno, o jogo traz diversão garantida para todos.
 
-This contains everything you need to run your app locally.
+## Funcionalidades
 
-View your app in AI Studio: https://ai.studio/apps/92b4ea55-64e5-4678-a877-0984c26984d8
+- **Vocabulário Extenso e Offline:** Mais de 2.100 palavras cadastradas e divididas por categorias temáticas diretamente no próprio código (banco local sem necessidade de API).
+- **Bilíngue (🇵🇹 PT-BR e 🇸🇦 Árabe):** As palavras, descrições e interface gráfica são adaptadas para apresentar os dois idiomas simultaneamente.
+- **Roleta de Categorias:** O sistema realiza sorteios de categorias (Pessoa/Animal/Lugar, Objetos, Ação, Lazer, Difícil).
+- **Eventos "Todos Jogam":** Casas especiais onde qualquer equipe pode pontuar ao mesmo tempo!
+- **Tabuleiro Dinâmico e Gamificado:** Acompanhe o avanço da equipe em um tabuleiro integrado (estilo Kanban).
 
-## Run Locally
+## Categorias
 
-**Prerequisites:**  Node.js
+* **P** - Pessoas, Lugares Históricos ou Animais Exóticos
+* **O** - Objetos, Ferramentas ou Artefatos específicos
+* **A** - Ação, Atividades e Verbos Expressivos
+* **D** - Difícil! Conceitos abstratos ou palavras complexas
+* **L** - Lazer, Cultura, Festas e Artes
+* **T** - *Todos Jogam!* Evento coletivo para todos participarem.
 
+## Como jogar e rodar localmente
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+O projeto é mantido utilizando as tecnologias front-end **React, Vite e Tailwind CSS.** 
+Ele é focado para navegadores (Web e Mobile-web) e roda 100% no lado do cliente.
+
+**Pré-requisito:** Instale o [Node.js](https://nodejs.org/en) na sua máquina.
+
+1. Instale as dependências executando na pasta principal:
+```bash
+npm install
+```
+
+2. Inicie o de desenvolvedor (ambiente live-reload):
+```bash
+npm run dev
+```
+
+3. Acesse a porta informada no terminal em seu navegador (geralmente `http://localhost:5173`).
+
+---
+Divirta-se! Let the miming begin! 🎭
