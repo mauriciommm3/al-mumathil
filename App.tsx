@@ -196,13 +196,13 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="h-screen w-full flex flex-col md:flex-row bg-[#F2F2F7] overflow-hidden">
+    <div className="h-[100dvh] w-full flex flex-col md:flex-row bg-[#F2F2F7] overflow-hidden">
 
-      <div className="h-[40vh] md:h-full md:w-[320px] lg:w-[360px] w-full shrink-0 border-r border-slate-200/50 relative z-0">
+      <div className="h-[35vh] sm:h-[40vh] md:h-full md:w-[320px] lg:w-[360px] w-full shrink-0 border-r border-slate-200/50 relative z-0">
         <Board />
       </div>
 
-      <div className="flex-1 flex flex-col h-full relative z-10 bg-white md:rounded-l-[2.5rem] shadow-2xl overflow-hidden">
+      <div className="flex-1 flex flex-col h-full relative z-10 bg-white md:rounded-l-[2.5rem] shadow-2xl overflow-y-auto md:overflow-hidden">
 
         <div className="px-5 py-3 sm:px-6 sm:py-4 flex justify-between items-center z-20 shrink-0 border-b border-slate-50">
           <div className="flex flex-col">
@@ -224,7 +224,7 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex-1 p-4 sm:p-6 flex items-center justify-center overflow-hidden">
+        <div className="flex-1 p-3 sm:p-6 flex items-center justify-center overflow-y-auto md:overflow-hidden min-h-0">
           {gameStatus === 'idle' ? (
             isSpinning ? (
               <CategoryRoulette onComplete={handleRouletteComplete} />

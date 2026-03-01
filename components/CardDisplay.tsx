@@ -97,15 +97,15 @@ export const CardDisplay: React.FC<CardDisplayProps> = ({ card, onRedraw, loadin
         </div>
       </div>
 
-      <div className="flex-1 flex flex-col justify-center gap-4 sm:gap-10 overflow-hidden">
-        <div className="text-center animate-slide-up flex items-center justify-center">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight break-words leading-tight">
+      <div className="flex-1 flex flex-col justify-center gap-3 sm:gap-10 overflow-y-auto min-h-0 py-2">
+        <div className="text-center animate-slide-up flex flex-col items-center justify-center shrink-0 w-full px-2">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight break-words hyphens-auto leading-tight w-full">
             {card.word.pt}
           </h2>
         </div>
 
-        <div className="text-center bg-[#F2F2F7] w-full py-6 sm:py-8 px-4 rounded-[1.5rem] sm:rounded-[2rem] border border-slate-100 animate-slide-up shadow-inner flex items-center justify-center overflow-hidden">
-          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-slate-800 font-arabic break-words leading-relaxed" dir="rtl">
+        <div className="text-center bg-[#F2F2F7] w-full py-4 sm:py-8 px-4 rounded-[1.25rem] sm:rounded-[2rem] border border-slate-100 animate-slide-up shadow-inner flex flex-col items-center justify-center shrink-0 mt-2 sm:mt-0">
+          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-slate-800 font-arabic break-words leading-relaxed w-full" dir="rtl">
             {card.word.ar}
           </h2>
         </div>
