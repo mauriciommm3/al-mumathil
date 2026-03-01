@@ -290,7 +290,7 @@ const App: React.FC = () => {
         </div>
 
         {gameStatus !== 'idle' && (
-          <div className="px-5 py-4 sm:p-6 bg-slate-50/50 backdrop-blur-md border-t border-slate-100 z-20 shrink-0">
+          <div className="px-3 py-2 sm:px-5 sm:py-6 bg-slate-50/50 backdrop-blur-md border-t border-slate-100 z-20 shrink-0">
             <div className="max-w-md mx-auto">
               <GameControls />
             </div>

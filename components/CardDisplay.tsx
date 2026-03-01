@@ -97,15 +97,15 @@ export const CardDisplay: React.FC<CardDisplayProps> = ({ card, onRedraw, loadin
         </div>
       </div>
 
-      <div className="flex-1 flex flex-col justify-center gap-3 sm:gap-10 overflow-y-auto min-h-0 py-2">
-        <div className="text-center animate-slide-up flex flex-col items-center justify-center shrink-0 w-full px-2">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight break-words hyphens-auto leading-tight w-full">
+      <div className="flex-1 flex flex-col gap-2 sm:gap-6 min-h-0 py-1">
+        <div className="flex-1 text-center animate-slide-up flex flex-col items-center justify-center shrink-0 w-full px-2 min-h-0 overflow-y-auto">
+          <h2 className="text-xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight break-words hyphens-auto leading-tight w-full my-auto">
             {card.word.pt}
           </h2>
         </div>
 
-        <div className="text-center bg-[#F2F2F7] w-full py-4 sm:py-8 px-4 rounded-[1.25rem] sm:rounded-[2rem] border border-slate-100 animate-slide-up shadow-inner flex flex-col items-center justify-center shrink-0 mt-2 sm:mt-0">
-          <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-slate-800 font-arabic break-words leading-relaxed w-full" dir="rtl">
+        <div className="flex-1 text-center bg-[#F2F2F7] w-full p-3 sm:p-6 rounded-[1.25rem] sm:rounded-[2rem] border border-slate-100 animate-slide-up shadow-inner flex flex-col items-center justify-center shrink-0 mt-1 sm:mt-0 min-h-0 overflow-y-auto">
+          <h2 className="text-lg sm:text-3xl md:text-4xl font-bold text-slate-800 font-arabic break-words leading-relaxed w-full my-auto" dir="rtl">
             {card.word.ar}
           </h2>
         </div>
